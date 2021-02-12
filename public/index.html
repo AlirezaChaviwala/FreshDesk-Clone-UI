@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FreshDesk Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .but {
+            padding: 2px;
+        }
+        
+        #freshDesk-logo:hover {
+            cursor: pointer;
+        }
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+    </style>
+</head>
+
+<body>
+    <div style="background-color: #25C16F;width: 100%;height: 60px;padding-top: 7px;" class="d-flex flex-row justify-content-start align-items-center">
+        <img src="freshdesk-logo-1.png" id='freshDesk-logo' alt="Fresh Desk logo" height='50vw'>
+    </div>
+
+    <div id='main-div' class="align-self-stretch container-fluid">
+        <div class="align-self-stretch row text-center">
+            <div class='col-lg-2 col-md-12 col-sm-12 order-0 align-self-stretch bg-light'>
+                <div class='navbar navbar-expand-lg navbar-light'>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideBarToggler" aria-controls="sideBarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="sideBarToggler">
+                        <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0 d-flex flex-column justify-content-center align-items-center text-center">
+                            <li class="nav-item mb-2">
+                                <p style='font-size: 200%;color: #25C16F;font-family: Noto Sans JP, sans-serif;' class="mb-0">Tickets</p>
+                            </li>
+                            <li class="nav-item">
+                                <button id='create-ticket' type='button' class='mt-2 mb-0 but btn rounded btn-lg btn-block'>Create Ticket</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id='update-ticket' type='button' class='but btn rounded btn-lg btn-block'>Update Ticket</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id='list-ticket' type='button' class='but btn rounded btn-lg btn-block'>List All Tickets</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id='delete-ticket' type='button' class='but btn rounded btn-lg btn-block'>Delete Ticket</button>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <p style='font-size: 2rem;color: #25C16F;font-family: Noto Sans JP, sans-serif;' class="mt-2 mb-0">Contacts</p>
+                            </li>
+                            <li class="nav-item">
+                                <button id='create-contact' type='button' class='but btn rounded btn-lg btn-block'>Create Contact</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id='update-contact' type='button' class='but btn rounded btn-lg btn-block'>Update Contact</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id='list-contact' type='button' class='but btn rounded btn-lg btn-block'>List All Contacts</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id='delete-contact' type='button' class='but btn rounded btn-lg btn-block'>Delete Contact</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id='content-body' class='col-lg-9 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center'>
+                <h1 id='welcome-text' style='font-size: 5vw;color: #25C16F;font-family: Noto Sans JP, sans-serif;' class='mt-5'>Welcome to FreshDesk Dashboard</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+    <script src="https://kit.fontawesome.com/db33bd7670.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+
+</html>
